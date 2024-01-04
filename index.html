@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+        font-family: 'Helvetica Neue';
+        src: url('./fonts/helvetica-neu.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Helvetica Neue';
+        src: url('./fonts/helvetica-neu.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'La Belle Aurore';
+        src: url('./fonts/LaBelleAurore.woff2') format('woff2'),
+            url('./fonts/LaBelleAurore.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: 'Coolvetica';
+        src: url('./fonts/CoolveticaRg-Regular.woff2') format('woff2'),
+            url('./fonts/CoolveticaRg-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        body {
+            margin: 0;
+            font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+            color: #fcf7f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: #22428d;
+            overflow: hidden;
+            display: block;
+        }
+        h1 h2 {
+            color: #fff;
+            font-size: 56px;
+            line-height: 53px;
+            margin: 0;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #3a6ab4;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            background: #181818;
+            display: block;
+            color: #3776bb;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            background-color: #3f89ca;
+            color: #181818;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        ul.removeDots {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        div#home li {
+            padding-left: 2rem;
+            background-image: url("./img/invaders.svg");
+            background-position: 0 50%;
+            background-size: 1.3rem 1.3rem;
+            background-repeat: no-repeat;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+        .buttonClass {
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            font-size:25px;
+            font-family: 'La Belle Aurore';
+            width:240px;
+            height:150px;
+            border-width:1px;
+            color:#14396a;
+            border-color:#333333;
+            font-weight:bold;
+            border-top-left-radius:6px;
+            border-top-right-radius:6px;
+            border-bottom-left-radius:6px;
+            border-bottom-right-radius:6px;
+            box-shadow:inset 0px 1px 0px 0px #fff6af;
+            text-shadow:inset 0px 1px 0px #ffee66;
+            background:linear-gradient(#ffec64, #ffab23);
+        }
+
+        .buttonClass:hover {
+        background: linear-gradient(#ffab23, #ffec64);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#workExp">Work experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class='content'>
+        <div id="home" style="padding-bottom: 100px; text-align: center;">
+            
+            <h1 style="text-align: center;">Hi, I'm Angel Molina
+                <br />
+            </h1>
+            <h2 style="text-align: center;">Java developer</h2>
+            
+            <img src="./img/man_icon.svg" class="center"/>
+            <h2 id="about">Backend developer / Java developer / web developer</h2>
+            <h3>
+                <ul class="removeDots">
+                    <li>Analyst and developer of java-based systems with more than 8 years implementing business
+                        modules for user management </li>
+                    <li>modeling and implementation of software for managing bank
+                        procedures</li>
+                    <li>generating reports for regulatory entities, maintenance and configuration of servers.</li>
+                    <li>Broad experience developing systems based on java 6 and 8 </li>
+                    <li>management of frameworks
+                        such as: Struts and JSF</li>
+                    <li>Experience developing and implementing Web Services Rest and
+                        SOAP</li>
+                    </p>
+                </ul>
+            </h3>
+                <a href="#" class="buttonClass">Contactame</a>
+        </div>
+        <div id="workExp" class="row" style="width: 100%; padding-bottom: 100px;">
+            <h2>Work Experience</h2>
+            <table style="width: 100%;">
+                <tr>
+                    <td width="40%">IBM Mexico | May 2022 - April 2023</td>
+                    <td width="60%">Develop of new requirements, communication with business side <br />
+                        Maintenance of existing code based on Python / Flask microservices<br />
+                        Resource management of google cloud components<br />
+                        Design and develop of new automated fluxes of Apache Airflow components<br />
+                        Experienced working as part of the development team using Scrum/Agile metodologies</td>
+                </tr>
+                <tr>
+                    <td width="40%">Grupo Salinas | June 2019 - August 2021</td>
+                    <td>Requirements development, communication with business analysts; test implementation<br />
+                        Implementation of Rest and SOAP web services<br />
+                        Server management and migration, instance creation and maintenance<br />
+                        Design of software solutions, generation of regulatory reports and maintenance of group
+                        applications<br />
+                        Continuous Integration Flow Management (DEVOPS)<br />
+                        Experienced working as part of the development team using Scrum/Agile metodologies<br /></td>
+                </tr>
+                <tr>
+                    <td>Grupo Financiero INBURSA | Feb 2016 - May 2019</td>
+                    <td>Requirements development, communication with business analysts; test implementation<br />
+                        Generation of reports for communication with PROCESAR<br />
+                        Generation and modification of packages and stored procedures<br />
+                        Creation and management of web services<br />
+                        Management and implementation of Batch processes<br />
+                        Management of the AFORE development team<br />
+                        Documentation of developments and start-up<br /></td>
+                </tr>
+                <tr>
+                    <td>XYED consulting | May 2015 - Ene 2016</td>
+                    <td>Implementation of web services based on SOAP using the JAVA programming language.<br />
+                        Maintenance of MVC-based applications<br />
+                        Implementation of social login with google+.<br />
+                        Creation of JNDI for database and configuration management</td><br />
+                </tr>
+            </table>
+        </div>
+        <div id="education" class="row" style="width: 100%; padding-bottom: 100px;">
+            <h2>Education</h2>
+            <table style="display: block; width: 100%;">
+                <tr>
+                    <td>Universidad Tecnológica Emiliano Zapata del Estado de Morelos (UTEZ).
+                        IT Engineering</td>
+                    <td>Graduated: 2015</td>
+                </tr>
+                <tr>
+                    <td>Universidad Tecnológica del Estado de Querétaro (UTEQ).
+                        Bachelor in Technology and communication</td>
+                    <td>Graduated: 2012</td>
+                </tr>
+                <tr>
+                    <td>Master en frameworks javascript: Angular, React,Vue</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Design Thinking</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>SCRUM foundation professional Certificate</td>
+                    <td>2021</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact" style="padding-bottom: 100px;">
+            <h2>Points of contact</h2>
+            <h3>Personal number: 7771429016</h3>
+            <h3>Email: angelmolinapimentel@gmail.com</h3>
+            <h3><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_
+                profile"><img src="./img/linkedin_icon.svg"> </a>
+                </h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
